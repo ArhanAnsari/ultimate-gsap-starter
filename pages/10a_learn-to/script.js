@@ -1,6 +1,6 @@
 import gsap from "gsap";
 
-const showToastLoop = () => {
+function showToastLoop() {
   gsap.to(".toast", {
     y: -120,
     opacity: 1,
@@ -14,13 +14,14 @@ const showToastLoop = () => {
         opacity: 0,
         scale: 0.95,
         duration: 0.7,
-        ease: "power.in",
+        ease: "power2.in",
         onComplete: () => {
-          setTimeout(showToastLoop, 2500);
+          // Restart after slight delay
+          setTimeout(showToastLoop, 1500);
         },
       });
     },
   });
-};
+}
 
 showToastLoop();

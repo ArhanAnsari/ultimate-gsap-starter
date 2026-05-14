@@ -1,6 +1,5 @@
 import gsap from "gsap";
 
-// Targeting all the btns
 const play = document.querySelector(".play");
 const pause = document.querySelector(".pause");
 const resume = document.querySelector(".resume");
@@ -21,24 +20,31 @@ const animation = gsap.to(".box", {
 play.addEventListener("click", () => {
   animation.play();
 });
+
 pause.addEventListener("click", () => {
   animation.pause();
 });
+
 resume.addEventListener("click", () => {
   animation.resume();
 });
+
 restart.addEventListener("click", () => {
   animation.restart();
 });
+
 reverse.addEventListener("click", () => {
   animation.reverse();
 });
+
 kill.addEventListener("click", () => {
   animation.kill();
 });
+
 yoyo.addEventListener("click", () => {
   animation.yoyo(true);
 });
+
 repeat.addEventListener("click", () => {
-  animation.repeat(2);
+  animation.repeat(5);
 });

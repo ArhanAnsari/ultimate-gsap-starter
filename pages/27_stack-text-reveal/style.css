@@ -15,7 +15,7 @@ main {
 
 .stacked-text {
   color: white;
-  font-size: 14vw;
+  font-size: 12vw;
   line-height: 0.8;
   font-weight: 900;
   text-align: center;
@@ -32,4 +32,6 @@ main {
 
 .line span {
   display: inline-block;
+  transform: translateY(120%) scale(1.2);
+  will-change: transform;
 }

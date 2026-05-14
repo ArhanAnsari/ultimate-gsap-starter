@@ -1,6 +1,4 @@
-import gsap from "gsap";
-
-gsap.to(".box", {
+gsap.to(".card", {
   opacity: 1,
   scale: 1,
   duration: 5,
